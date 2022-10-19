@@ -1,0 +1,3 @@
+rootProject.name = 'onlinecv-microservices'
+include 'profile-microservice'
+
