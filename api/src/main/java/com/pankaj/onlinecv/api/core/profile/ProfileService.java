@@ -1,4 +1,4 @@
-package com.pankaj.onlinecv.api.profile;
+package com.pankaj.onlinecv.api.core.profile;
 
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.PathVariable;

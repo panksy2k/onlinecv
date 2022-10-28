@@ -1,4 +1,4 @@
-package com.pankaj.onlinecv.api.profile;
+package com.pankaj.onlinecv.api.core.profile;
 
 public class ProfilePerson {
     private String id;
