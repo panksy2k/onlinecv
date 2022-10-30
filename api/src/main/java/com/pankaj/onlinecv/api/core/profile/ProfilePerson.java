@@ -1,7 +1,7 @@
 package com.pankaj.onlinecv.api.core.profile;
 
 public class ProfilePerson {
-    private String id;
+    private Integer id;
     private String name;
     private String serviceAddress;
 
@@ -11,17 +11,17 @@ public class ProfilePerson {
         serviceAddress = null;
     }
 
-    public ProfilePerson(String id, String name, String serviceAddress) {
+    public ProfilePerson(Integer id, String name, String serviceAddress) {
         this.id = id;
         this.name = name;
         this.serviceAddress = serviceAddress;
     }
 
-    public String getId() {
+    public Integer getId() {
         return id;
     }
 
-    public void setId(String id) {
+    public void setId(Integer id) {
         this.id = id;
     }
 

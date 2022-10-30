@@ -1,4 +1,5 @@
 rootProject.name = 'onlinecv-microservices'
 include 'profile-microservice'
 include 'api'
+include 'profile-composite-microservice'
 

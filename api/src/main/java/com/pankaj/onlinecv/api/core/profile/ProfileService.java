@@ -10,5 +10,5 @@ public interface ProfileService {
     ProfilePerson createNewProfile(@RequestBody ProfilePerson body);
 
     @DeleteMapping(value = "/profile/{profileId}", produces = "application/json")
-    Boolean deleteProfile(@PathVariable String profileId);
+    Boolean deleteProfile(@PathVariable Integer profileId);
 }
