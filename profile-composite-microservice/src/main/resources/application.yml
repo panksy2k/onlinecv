@@ -1,0 +1,38 @@
+server.port:  7000
+app:
+  profile-service:
+    host: localhost
+    port: 7001
+  skills-service:
+    host: localhost
+    port: 7002
+
+spring:
+  cloud:
+    stream:
+      kafka:
+        binder:
+          brokers:  localhost
+
+      default-binder: kafka
+      bindings:
+        profile-core:
+          destination:  profile
+          producer:
+            required-groups:  auditGroup
+        skills:
+          destination:  skills
+          producer:
+            required-groups:  auditGroup
+logging:
+  level:
+    root: INFO
+    com.pankaj.onlinecv:  INFO
+management:
+  endpoint:
+    health:
+      show-details: ALWAYS
+  endpoints:
+    web:
+      exposure:
+        include: "*"
